@@ -289,8 +289,8 @@ body {
   .hero {
     background-image: url(../images/herobg/480/hero-480@2jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
     background-image: url(../images/herobg/480/hero-480@2jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    background-image: -webkit-image-set(url(./images/herobg/480@2x.webp) 2x), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: -webkit-image-set(url(./images/herobg/480@2x.webp) 2x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: -webkit-image-set(url(../images/herobg/480/hero-480@2x.webp) 2x), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: -webkit-image-set(url(../images/herobg/480/hero-480@2x.webp) 2x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 }
 @media screen and (min-width: 768px) {
@@ -896,7 +896,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .command__item {
-    width: 270px;
+    max-width: 270px;
   }
   .command__item:nth-child(-n+2) {
     margin-bottom: 0;
