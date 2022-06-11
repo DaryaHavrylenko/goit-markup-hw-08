@@ -2,40 +2,39 @@
   @extend %link;
   color: $logo-color;
 
-font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   @media screen and (min-width: 1200px) {
-      font-size: 26px;
-      line-height: 1.19;
-    }
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo--header {
-      display: block;
-      
-        padding-top: 16px;
-        padding-bottom: 16px;
-      
-        @media screen and (min-width: 768px) {
-          margin-right: 88px;
-          padding-top: 26px;
-          padding-bottom: 26px;
-        }
-      
-        @media screen and (min-width: 1200px) {
-          margin-right: 93px;
-          padding-top: 25px;
-          padding-bottom: 24px;
-        }
+  display: block;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 .logo__text--black {
   color: $black-color;
-  
 }
 .logo--footer {
   display: inline-block;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo__text--white {
   color: $white-color;

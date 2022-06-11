@@ -87,22 +87,6 @@
 
 .command__image {
   @extend %img;
-
-  // @media screen and (max-width: 767.98px) {
-  //   width: 450px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   width: 354px;
-  //   height: 374px;
-
-  //   object-fit: cover;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   width: 270px;
-  //   height: 260px;
-  // }
   width: 100%;
 
   @media screen and (min-width: 768px) {
