@@ -88,7 +88,22 @@
 .command__image {
   @extend %img;
 
-  max-width: 450px;
+  // @media screen and (max-width: 767.98px) {
+  //   width: 450px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 374px;
+
+  //   object-fit: cover;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   width: 270px;
+  //   height: 260px;
+  // }
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -103,7 +118,7 @@
   }
 }
 .command__card-contents {
-padding: 30px 32px;
+  padding: 30px 32px;
 
   @media screen and (max-width: 1199.98px) {
     padding-bottom: 24px;
