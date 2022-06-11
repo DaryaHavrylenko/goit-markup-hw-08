@@ -22,12 +22,12 @@
 
 .command__list {
   @extend %list;
-@media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -30px;
-        margin-left: -30px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .card-contents {
@@ -39,47 +39,33 @@
 }
 
 .command__item {
-  width: 100%;
-
-  background-color: $prymery-bgc;
-
+  max-width: 450px;
+  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  @media screen and (max-width: 767.98px) {
-    &:not(:last-child) {
+  border-radius: 0px 0px 4px 4p;
+margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 767.5px) {
+    .team__list &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-
   @media screen and (min-width: 768px) {
-   max-width: 354px;
-   margin-top: 30px;
-   margin-left: 30px;
-flex-basis: calc((100% - 2 * 30) / 2);
-   
+    max-width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
   }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    margin-top: 0;
-    margin-left: 0;
-
-  //   &:nth-child(-n + 2) {
-  //     margin-bottom: 0;
-  //   }
-
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
 }
-.command__image {
-  @extend %image;
 
-width: 100%;
-max-width: 450px;
+.command__image {
+  @extend %img;
+
+  width: 100%;
+  max-width: 450px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -109,7 +95,6 @@ max-width: 450px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  
 }
 
 .card-contents__text {
@@ -119,26 +104,25 @@ max-width: 450px;
   color: $tittle-text-color;
   font-size: 16px;
   line-height: 1.18;
-  
 }
 
 .card-contents__social {
-    @extend %list;
+  @extend %list;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 .card-contents__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
 
-    &:not(:last-child) {
-        margin-right: 0;
-    }
+  &:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .card-contents__link {
-    @extend %link;
+  @extend %link;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,9 +137,6 @@ justify-content: center;
     background-color: #2196f3;
   }
 }
-
-
-
 .card-contents__icon {
   fill: #afb1b8;
   background-color: transparent;
@@ -163,7 +144,7 @@ justify-content: center;
   width: 20px;
   height: 20px;
   transition: fill 250ms $timing-function;
-.card-contents__link:hover &,
+  .card-contents__link:hover &,
   .card-contents__link:focus & {
     fill: #ffffff;
   }
