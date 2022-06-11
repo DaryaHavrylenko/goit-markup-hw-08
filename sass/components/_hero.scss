@@ -1,0 +1,90 @@
+.hero {
+  background-color: $prymery-text-color;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+
+  &--overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/herobg/480/hero-480.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.hero__container {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero__title {
+  margin: auto;
+  margin-bottom: 30px;
+
+  color: $white-color;
+
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__button {
+  @extend %button;
+
+  &--prymery {
+    padding: 10px 32px;
+    min-width: 200px;
+
+    color: $white-color;
+    background-color: $accent-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    transition: background-color 250ms $timing-function;
+  }
+}
+
+.hero__button--prymery:hover {
+  background-color: #188ce8;
+}
+.hero__button--prymery {
+  .hero__button {
+      @extend %button;
+  
+      &--prymery {
+        padding: 10px 32px;
+        min-width: 200px;
+  
+        color: $white-color;
+        background-color: $accent-color;
+  
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        text-align: center;
+  
+        transition: background-color 250ms $timing-function;
+      }
+    }
+}
+.hero__button--prymery:hover, .hero__button--prymery:focus {
+  background-color: #188ce8;
+}

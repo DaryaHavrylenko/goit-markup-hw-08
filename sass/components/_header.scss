@@ -1,0 +1,139 @@
+.header {
+  border-bottom: 1px solid $page-header-border-color;
+}
+.header__nav,
+.address {
+  // display: flex;
+  // align-items: center;
+  @media screen and (max-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+ }
+ .header__container {
+   @extend %container;
+
+// display: flex;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+ }
+.header__list {
+  @extend %list;
+//   display: flex;
+// margin-left: 93px;
+@media screen and (max-width: 480px) {
+  display: none;
+}
+  
+}
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header__link {
+  @extend %link;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+  font-style: normal;
+  color: $prymery-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.header__link--current {
+  color: $accent-color;
+  position: relative;
+  display: block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
+}
+.address {
+  @extend %list;
+  // display: flex;
+ 
+  // margin-left: auto;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  
+}
+.address__item:not(:last-child) {
+  margin-right: 30px;
+}
+.address__link {
+  @extend %link;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $tittle-text-color;
+  align-items: center;
+  font-weight: 500;
+ 
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  
+  
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+ 
+}
+ .address__links--footer {
+
+   @extend %link;
+   font-size: 14px;
+   line-height: 1.7;
+   
+   transition: color 250ms $timing-function;
+   color: $footer-address-color;
+   &:hover, &:focus {
+    color: $accent-color;
+   }
+ }
+.address__icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: rgba(117, 117, 117, 1);
+  margin-right: 10px;
+  transition: fill 250ms $timing-function;
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: rgba(33, 150, 243, 1);
+  }
+}
+.address__icon-mob {
+  width: 10px;
+  height: 16px;
+  fill: rgba(117, 117, 117, 1);
+  margin-right: 10px;
+  transition: fill 250ms $timing-function;
+
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: rgba(33, 150, 243, 1);
+  }
+}
+
