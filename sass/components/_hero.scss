@@ -1,44 +1,109 @@
 .hero {
-  background-color: $prymery-text-color;
-  text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
-
-  &--overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/herobg/480/hero-480.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.hero__container {
-
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  text-align: center;
+
+background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/herobg/480/hero-480.jpg);
+    background-image: -webkit-image-set(url(../images/herobg/480/hero-480.webp) 1x), 
+linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+@include mq(retina) {
+background-image: url(../images/herobg/480/hero-480@2jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+background-image: -webkit-image-set(url(./images/herobg/480@2x.webp) 2x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
+
+@include mq(tablet) {
+  background-image: url(../images/herobg/768/hero-768.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: -webkit-image-set(url(../images/herobg/768/hero-768.webp) 1x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+@include mq(retina) {
+  background-image: url(../images/herobg/768/hero-768@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));}
+    background-image: -webkit-image-set(url(../images/herobg/768/hero-768@2x.webp) 2x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
+@include mq(desktop) {
+  background-image: url(../images/herobg/1200/hero-1200.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: -webkit-image-set(url(../images/herobg/1200/hero-1200@2x.webp) 2x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+@include mq(retina) {
+background-image: url(../images/herobg/1200/hero-1200@2x.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+background-image: -webkit-image-set(url(../images/herobg/1200/hero-1200@2x.webp) 2x), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
+}
+@media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+}
+
+
+  // @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/herobg/480/hero-480@2x.jpg);
+  // }
+  // @media screen and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/herobg/480/hero-480@3x.jpg);
+  // }
+  // // @media screen and (min-width: 481px) and (max-width: 768.98px) {
+  // //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  // //     url(../images/herobg/768/hero-768.jpg);
+  // // }
+  // @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/herobg/768/hero-768@2x.jpg);
+  // }
+  // @media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/herobg/768/hero-768@3x.jpg);
+  // }
+  // // @media screen and (min-width: 769px) {
+  // //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  // //     url(../images/herobg/1200/hero-1200.jpg);
+  // // }
+  // @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/herobg/1200/hero-1200@2x.jpg);
+  // }
+  // @media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //     url(../images/herobg/1200/hero-1200@3x.jpg);
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 200px;
+  //   padding-bottom: 200px;
+  // }
+
+
+.hero__container {
+@extend %container;
 }
 
 .hero__title {
   margin: auto;
   margin-bottom: 30px;
-
-  color: $white-color;
-
-  width: 696px;
+  width: 360px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  color: $white-color;
+
+  @media screen and (max-width: 1199px) {
+font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    width: 696px;
+  }
 }
 
 .hero__button {
@@ -66,25 +131,26 @@
 }
 .hero__button--prymery {
   .hero__button {
-      @extend %button;
-  
-      &--prymery {
-        padding: 10px 32px;
-        min-width: 200px;
-  
-        color: $white-color;
-        background-color: $accent-color;
-  
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.9;
-        letter-spacing: 0.06em;
-        text-align: center;
-  
-        transition: background-color 250ms $timing-function;
-      }
+    @extend %button;
+
+    &--prymery {
+      padding: 10px 32px;
+      min-width: 200px;
+
+      color: $white-color;
+      background-color: $accent-color;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.9;
+      letter-spacing: 0.06em;
+      text-align: center;
+
+      transition: background-color 250ms $timing-function;
     }
+  }
 }
-.hero__button--prymery:hover, .hero__button--prymery:focus {
+.hero__button--prymery:hover,
+.hero__button--prymery:focus {
   background-color: #188ce8;
 }
