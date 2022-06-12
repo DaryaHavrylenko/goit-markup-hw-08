@@ -73,6 +73,9 @@
     height: 4px;
     border-radius: 2px;
     background-color: currentColor;
+    @media screen and (min-width: 768px) {
+      bottom: -3px;
+    }
   }
 }
 .address {
