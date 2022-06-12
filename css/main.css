@@ -45,7 +45,7 @@
   font-style: normal;
 }
 
-.product__image, .command__image, .thumbs__image {
+.product__image, .command__image, .work__image {
   display: block;
   min-width: 100%;
   height: auto;
