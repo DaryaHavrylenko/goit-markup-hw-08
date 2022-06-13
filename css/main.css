@@ -39,13 +39,13 @@
   overflow: hidden;
 }
 
-.join__list, .footer__list, .card-set, .portfolio__list, .clients__list, .card-contents__social, .command__list, .work__list, .benefits__list, .address, .header__list {
+.join__list, .footer__list, .card-set, .portfolio__list, .clients__list, .card-contents__social, .command__list, .work__list, .benefits__list, .mobile-menu__social, .mobile-menu__contacts, .mobile-menu__nav, .address, .header__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.join__link, .product__link, .card-contents__link, .address__links--footer, .address__link, .header__link, .logo {
+.join__link, .product__link, .card-contents__link, .mobile-menu__social-link, .mobile-menu__contact-link, .mobile-menu__link, .address__links--footer, .address__link, .header__link, .logo {
   text-decoration: none;
   font-style: normal;
 }
@@ -450,11 +450,73 @@ body {
   margin-bottom: 32px;
 }
 
-.mobil-menu__link {
+.mobile-menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: rgb(33, 150, 243);
+}
+
+.mobile-menu__contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
+.mobile-menu__contact-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: rgb(33, 150, 243);
+}
+.mobile-menu__contact-link--grey {
+  color: #757575;
+}
+
+.mobile-menu__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.mobile-menu__social-item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: rgb(33, 150, 243);
 }
 
 .hero {
@@ -695,11 +757,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
-  .modal__form-fields {
-    margin-bottom: 10px;
-  }
-}
 
 .modal__form-icon {
   position: absolute;
@@ -721,6 +778,7 @@ body {
 
 .modal__form-input {
   margin: 0;
+  margin-bottom: 10px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
