@@ -50,15 +50,15 @@
 }
 
 .footer__text {
-  // margin-top: 0;
-  // margin-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 8px;
   color: $white-color;
   line-height: 1.7;
   font-style: normal;
-  @media screen and (max-width: 480px) {
-    margin-top: 20px;
-    margin-bottom: 8px;
-  }
+  // @media screen and (max-width: 480px) {
+  //   margin-top: 20px;
+  //   margin-bottom: 8px;
+  // }
 }
 .footer__list {
   @extend %list;
@@ -80,9 +80,9 @@
   }
 }
 .footer__foot {
-  @media screen and (max-width: 480px) {
+  
     margin-bottom: 8px;
-  }
+  
 }
 // .footer__item {
 //   // margin-bottom: 9px;

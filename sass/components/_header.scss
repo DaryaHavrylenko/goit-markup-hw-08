@@ -182,6 +182,9 @@
  @media screen and (min-width: 768px) {
   display: none;
  }
+ &:hover, &:focus {
+  color: $accent-color;
+ }
 }
 .icon-close-menu {
   display: none;
