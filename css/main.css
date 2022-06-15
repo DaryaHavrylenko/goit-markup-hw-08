@@ -394,6 +394,7 @@ body {
   }
 }
 .menu-button:hover, .menu-button:focus {
+  outline: 0;
   color: rgb(33, 150, 243);
 }
 
