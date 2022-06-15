@@ -31,9 +31,9 @@
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/herobg/768/hero-768@2x.jpg);
-    }
+    
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url(../images/herobg/768/hero-768@2x.webp) 2x);
+      -webkit-image-set(url(../images/herobg/768/hero-768@2x.webp) 2x);}
   }
   @include mq(desktop) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
