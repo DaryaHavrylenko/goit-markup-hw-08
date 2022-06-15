@@ -17,7 +17,7 @@
 
   @include mq(retina) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/herobg/480/hero-480@2jpg);
+      url(../images/herobg/480/hero-480@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       -webkit-image-set(url(../images/herobg/480/hero-480@2x.webp) 2x);
   }
@@ -39,7 +39,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/herobg/1200/hero-1200.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url(../images/herobg/1200/hero-1200@2x.webp) 2x);
+      -webkit-image-set(url(../images/herobg/1200/hero-1200.webp));
     @include mq(retina) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/herobg/1200/hero-1200@2x.jpg);
