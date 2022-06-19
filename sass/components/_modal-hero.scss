@@ -78,7 +78,7 @@ z-index: 10;
 }
 
 .icon-close {
-  fill: var(--black-color);
+  fill: $black-color;
   transition: fill 250ms $timing-function;
   .close:hover &,
   .close:focus & {
